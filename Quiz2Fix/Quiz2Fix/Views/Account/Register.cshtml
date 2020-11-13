@@ -1,0 +1,105 @@
+﻿@model Quiz2Fix.Models.RegisterViewModel
+@{
+    ViewBag.Title = "Register";
+}
+
+
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+-->
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    @*<title>Register</title>*@
+
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- google fonts -->
+    <link href="//fonts.googleapis.com/css2?family=Jost:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="~/smartlogin/css/style.css" type="text/css" media="all" />
+
+    <!-- fontawesome v5 -->
+    <script src="https://kit.fontawesome.com/af562a2a63.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <section class="forms">
+        <div class="container">
+            <!-- logo -->
+            <div class="logo">
+                <a class="brand-logo" href="index.html"></a>
+            </div>
+            <!-- //logo -->
+            <div class="forms-grid">
+
+                <!-- register -->
+                <div class="register">
+                    <span class="fas fa-user-circle"></span>
+                    <strong>Create account!</strong>
+
+                    @using (Html.BeginForm("Register", "Account", FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form">
+
+                            <div class="form-row">
+                                <span class="fas fa-envelope p-2"></span>
+                                <label class="form-label" for="input">E-mail</label>
+                                <div></div>
+                                @Html.TextBoxFor(m => m.Email, new { @class = "form-text" })
+                            </div>
+
+                            <div class="form-row">
+                                <span class="fas fa-lock"></span>
+                                <label class="form-label" for="input">Password</label>
+                                @Html.PasswordFor(m => m.Password, new { @class = "form-text" })
+                            </div>
+
+                            <div class="form-row">
+                                <span class="fas fa-lock"></span>
+                                <label class="form-label" for="input">Confirm Password</label>
+                                @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-text" })
+                            </div>
+                            <div class="form-row button-login">
+                                <button class="btn btn-login">
+                                    Create <span class="fas fa-arrow-right"></span>
+                                </button>
+                            </div>
+                        </div>
+
+                    }
+
+
+                </div>
+                <!-- //register -->
+            </div>
+
+            <!-- copyright -->
+            @*<div class="copy-right">
+                <p>
+                    &copy; 2020 Minimal Forms. All rights reserved | Design by <a href="http://w3layouts.com/"
+                                                                                  target="_blank">W3layouts</a>
+                </p>
+            </div>*@
+            <!-- //copyright -->
+        </div>
+    </section>
+
+</body>
+
+</html>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

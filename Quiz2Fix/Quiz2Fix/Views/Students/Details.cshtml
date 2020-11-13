@@ -1,0 +1,122 @@
+﻿@model Quiz2Fix.Entities.Student
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Student</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week1)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week2)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week2)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week3)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week3)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week4)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week4)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week5)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week5)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week6)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week6)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week7)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week7)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week8)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week8)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week9)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week9)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Week10)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Week10)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MenuCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MenuCode)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { Id= Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
