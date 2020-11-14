@@ -242,8 +242,6 @@
     <Content Include="smartlogin\css\style.css" />
     <Content Include="smartlogin\fonts\fontawesome-webfont.svg" />
     <Content Include="smartlogin\img\calculator.jpg" />
-    <Content Include="smartlogin\img\cashdata.png" />
-    <Content Include="smartlogin\img\cashdatas.jpg" />
     <Content Include="smartlogin\index.html" />
     <Content Include="smartlogin\starter-license-W3Layouts.txt" />
     <Content Include="Web.config" />

@@ -52,7 +52,7 @@ Author URL: http://w3layouts.com
                         @Html.AntiForgeryToken()
 
                         <div class="form">
-
+                            @Html.ValidationSummary("", new { @class = "text-danger" })
                             <div class="form-row">
                                 <span class="fas fa-envelope p-2"></span>
                                 <label class="form-label" for="input">E-mail</label>
